@@ -1,0 +1,21 @@
+<h2>Contact us List</h2>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Subject</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let enquiry of enquiries">
+      <td>{{ contactus?.name }}</td>
+      <td>{{ contactus?.email }}</td>
+      <td>{{ contactus?.phone }}</td>
+      <td>{{ contactus?.subject }}</td>
+      <td>{{ contactus?.description }}</td>
+    </tr>
+  </tbody>
+</table>

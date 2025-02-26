@@ -1,0 +1,15 @@
+<nav class="menu">
+  <ul>
+    <li><button (click)="navigateTo('admin/enquiry')">Enquiry</button></li>
+    <li><button (click)="navigateTo('admin/contactus')">Contact Us</button></li>
+    <li><button (click)="navigateTo('admin/gallery')">Gallery</button></li>
+    <li><button (click)="navigateTo('admin/customer')">Customer</button></li>
+    <li><button (click)="navigateTo('admin/admission')">Admission</button></li>
+  
+  
+    <li>
+      <a *ngIf="!isLoggedIn()" routerLink="/admin/login">Login</a>
+      <a *ngIf="isLoggedIn()" (click)="logout()">Logout</a>
+    </li>
+  </ul>
+</nav>

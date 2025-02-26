@@ -1,0 +1,23 @@
+<h2>Enquiry Form</h2>
+
+<form (ngSubmit)="submitEnquiry()">
+  <label>Name:</label>
+  <input type="text" [(ngModel)]="enquiry.name" name="name" required />
+
+  <label>Email:</label>
+  <input type="email" [(ngModel)]="enquiry.email" name="email" required />
+
+  <label>Phone:</label>
+  <input type="text" [(ngModel)]="enquiry.phone" name="phone" required />
+
+  <label>Subject:</label>
+  <input type="text" [(ngModel)]="enquiry.subject" name="subject" required />
+
+  <label>Description:</label>
+  <textarea [(ngModel)]="enquiry.description" name="description" required></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
+<p *ngIf="successMessage">{{ successMessage }}</p>
+<p *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</p>
