@@ -14,18 +14,18 @@ export class ContactusComponent {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.fetchcontactus();
+   // this.fetchcontactus();
   }
 
-  fetchcontactus(): void {
-    const apiUrl = 'https://your-api-endpoint.com/fetchcontactus'; // Replace with your API URL
-    this.http.get<any[]>(apiUrl).subscribe(
-      (response) => {
-        this.contactus = response;
-      },
-      (error) => {
-        console.error('Error fetching fetchcontactus:', error);
-      }
-    );
-  }
+  // fetchcontactus(): void {
+  //   const apiUrl = 'https://your-api-endpoint.com/fetchcontactus'; // Replace with your API URL
+  //   this.http.get<any[]>(apiUrl).subscribe(
+  //     (response) => {
+  //       this.contactus = response;
+  //     },
+  //     (error) => {
+  //       console.error('Error fetching fetchcontactus:', error);
+  //     }
+  //   );
+  // }
 }

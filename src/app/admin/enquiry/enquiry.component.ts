@@ -13,18 +13,18 @@ export class EnquiryComponent {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.fetchEnquiries();
+    //this.fetchEnquiries();
   }
 
-  fetchEnquiries(): void {
-    const apiUrl = 'https://your-api-endpoint.com/enquiries'; // Replace with your API URL
-    this.http.get<any[]>(apiUrl).subscribe(
-      (response) => {
-        this.enquiries = response;
-      },
-      (error) => {
-        console.error('Error fetching enquiries:', error);
-      }
-    );
-  }
+  // fetchEnquiries(): void {
+  //   const apiUrl = 'https://your-api-endpoint.com/enquiries'; // Replace with your API URL
+  //   this.http.get<any[]>(apiUrl).subscribe(
+  //     (response) => {
+  //       this.enquiries = response;
+  //     },
+  //     (error) => {
+  //       console.error('Error fetching enquiries:', error);
+  //     }
+  //   );
+  // }
 }
